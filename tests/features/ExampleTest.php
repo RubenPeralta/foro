@@ -12,7 +12,7 @@ class ExampleTest extends FeatureTestCase
         ]);
 
         $this->actingAs($user, 'api')
-             ->visit(api/user)
+             ->visit('api/user')
              ->see('Ruben Peralta')
              ->see('rubenperalta@hotmail.com');
     }
