@@ -11,7 +11,7 @@ class ExampleTest extends FeatureTestCase
             'email'=> 'rubenperalta@hotmail.com',
         ]);
 
-        $this->actiongAs($user, 'api')
+        $this->actingAs($user, 'api')
              ->visit(api/user)
              ->see('Ruben Peralta')
              ->see('rubenperalta@hotmail.com');
